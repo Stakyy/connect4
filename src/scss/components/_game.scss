@@ -1,0 +1,17 @@
+.column {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.cell {
+  padding: 20px;
+  border: 1px solid black;
+}
+
+.firstPlayer {
+  background-color: blue;
+}
+
+.secondPlayer {
+  background-color: yellow;
+}
