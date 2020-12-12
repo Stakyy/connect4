@@ -34,20 +34,12 @@ function Home() {
     <div className="wrapper">
       <div className="games-field">
         {Object.keys(rooms).map((obj) => (
-          <NewGameWindow
-            key={obj}
-            number={obj}
-            room={rooms[obj]}
-            players={rooms[obj].players[2].id === null ? 1 : 2}
-          />
+          <NewGameWindow key={obj} number={obj} room={rooms[obj]} />
         ))}
       </div>
       <Button onClick={onRoomAdd} className="add-button" type="primary">
         Создать комнату
       </Button>
-      <button onClick={() => Object.keys(rooms).map((obj) => console.log(rooms[obj].players))}>
-        Сравнение
-      </button>
     </div>
   );
 }

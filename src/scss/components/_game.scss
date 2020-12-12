@@ -9,9 +9,24 @@
 }
 
 .firstPlayer {
+  color: yellow;
   background-color: blue;
 }
 
 .secondPlayer {
+  color: blue;
   background-color: yellow;
+}
+
+.currentPlayer {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  padding-bottom: 5px;
+}
+
+.reset-button {
+  margin-top: 20px;
+  text-align: center;
 }
